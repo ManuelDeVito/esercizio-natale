@@ -1,0 +1,12 @@
+header {
+    background-color: $background-color;
+
+
+    h1 {
+        text-align: center;
+        font-size: $pixel * 5;
+        color: $background-font;
+        text-transform: uppercase;
+        padding: $pixel * 3 0;
+    }
+}

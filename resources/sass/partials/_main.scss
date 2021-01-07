@@ -1,0 +1,43 @@
+main {
+    background-color: grey;
+
+}
+
+.contenitore {
+    max-width: $pixel * 150;
+    margin: auto;
+}
+
+.contenitore-dischi {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: $pixel * 5;
+
+        .dischi {
+            width: calc( 100% / 5 );
+            height: $pixel * 30;
+            margin: $pixel * 2;
+            border: 3px solid $background-color;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+                &.sfondo-chiaro {
+                    background-color: white;
+                }
+
+                &.sfondo-scuro {
+                    background-color: $background-color;
+                }
+
+                    p {
+                        font-size: $pixel * 2;
+                        padding: 15px 0;
+                        text-transform: uppercase;
+                        color: $background-font;
+
+                    }
+        }
+}
